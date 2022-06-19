@@ -19,8 +19,6 @@ const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/myLibrary',
  { useNewUrlParser: true ,
    useUnifiedTopology: true
- },() => {
-   console.log('Connected to MongoDB');
  });
 
 const db = mongoose.connection;
